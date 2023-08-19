@@ -15,10 +15,11 @@ class Warlock
 		void	introduce() const;
 
 	private:
+		std::string _name;
+		std::string _title;
+
 		// Warlock();
 		// Warlock(Warlock const &copy);
 		// Warlock &operator=(Warlock const &other);
 
-		std::string _name;
-		std::string _title;
 };

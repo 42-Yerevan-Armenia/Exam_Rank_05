@@ -14,7 +14,8 @@ class SpellBook
 		ASpell	*createSpell(std::string const &sname);
 
     private:
-    	SpellBook(SpellBook const &copy);
-		SpellBook &operator=(SpellBook const &other);
         std::map<std::string, ASpell *> _map;//01
+
+    	// SpellBook(SpellBook const &copy);
+		// SpellBook &operator=(SpellBook const &other);
 };

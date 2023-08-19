@@ -14,7 +14,8 @@ class TargetGenerator //SpellBook
 		ATarget	*createTarget(std::string const &sname);
 
     private:
-    	TargetGenerator(TargetGenerator const &copy);
-		TargetGenerator &operator=(TargetGenerator const &other);
         std::map<std::string, ATarget *> _map;
+
+    	// TargetGenerator(TargetGenerator const &copy);
+		// TargetGenerator &operator=(TargetGenerator const &other);
 };

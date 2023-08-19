@@ -21,12 +21,12 @@ class Warlock
 		void	launchSpell(std::string sname, ATarget const &target);
 
 	private:
-		Warlock();
-		Warlock(Warlock const &copy);
-		Warlock &operator=(Warlock const &other);
-		
 		std::string _name;
 		std::string _title;
 		
 		SpellBook _map;//02
+		
+		// Warlock();
+		// Warlock(Warlock const &copy);
+		// Warlock &operator=(Warlock const &other);
 };
