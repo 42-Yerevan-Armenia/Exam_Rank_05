@@ -7,7 +7,7 @@ class ASpell;
 class ATarget
 {
     public:
-        ATarget(std::string type);
+        ATarget(std::string const &type);
         virtual ~ATarget();
         ATarget();
         ATarget(ATarget const &copy);

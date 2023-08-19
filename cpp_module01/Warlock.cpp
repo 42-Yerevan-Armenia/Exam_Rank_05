@@ -1,7 +1,7 @@
 #include "Warlock.hpp"
 
 Warlock::~Warlock() {std::cout << _name << ": My job here is done!" << std::endl;}
-Warlock::Warlock(std::string name, std::string title) : _name(name), _title(title) 
+Warlock::Warlock(std::string const &name, std::string const &title) : _name(name), _title(title) 
 {std::cout << _name << ": This looks like another boring day." << std::endl;}
 
 std::string const &Warlock::getName() const {return (_name);}
@@ -22,4 +22,4 @@ Warlock &Warlock::operator=(Warlock const &other)
 //01
 void	Warlock::learnSpell(ASpell *spell){if (spell) _map[spell->getName()] = spell;}
 void	Warlock::forgetSpell(std::string sname){if (_map.find(sname) != _map.end()) _map.erase(_map.find(sname));}
-void	Warlock::launchSpell(std::string sname, ATarget &target){if (_map.find(sname) != _map.end()) _map[sname]->launch(target);}
+void	Warlock::launchSpell(std::string sname, ATarget const &target){if (_map.find(sname) != _map.end()) _map[sname]->launch(target);}

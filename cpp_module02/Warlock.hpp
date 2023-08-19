@@ -7,7 +7,7 @@
 class Warlock
 {
 	public:
-		Warlock(std::string name, std::string title);
+		Warlock(std::string const &name, std::string const &title);
 		~Warlock();
 
 		std::string const &getName() const;
@@ -18,7 +18,7 @@ class Warlock
 		
 		void	learnSpell(ASpell *spell);
 		void	forgetSpell(std::string sname);
-		void	launchSpell(std::string sname, ATarget &target);
+		void	launchSpell(std::string sname, ATarget const &target);
 
 	private:
 		Warlock();

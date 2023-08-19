@@ -7,7 +7,7 @@ class ATarget;
 class ASpell
 {
     public:
-        ASpell(std::string name, std::string effects);
+        ASpell(std::string const &name, std::string const &effects);
         virtual ~ASpell();
         ASpell();
         ASpell(ASpell const &copy);

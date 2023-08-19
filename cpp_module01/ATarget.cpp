@@ -1,7 +1,7 @@
 #include "ATarget.hpp"
 
 ATarget::~ATarget() {}
-ATarget::ATarget(std::string type) : _type(type){}
+ATarget::ATarget(std::string const &type) : _type(type){}
 
 ATarget::ATarget(){};
 ATarget::ATarget(ATarget const &copy) {*this = copy;};
