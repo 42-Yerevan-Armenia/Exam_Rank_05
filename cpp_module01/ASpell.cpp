@@ -1,7 +1,7 @@
 #include "ASpell.hpp"
 
 ASpell::~ASpell() {}
-ASpell::ASpell(std::string const &name, std::string const &title) : _name(name), _effects(title){}
+ASpell::ASpell(std::string const &name, std::string const &effects) : _name(name), _effects(effects){}
 
 std::string const &ASpell::getName() const {return (_name);}
 std::string const &ASpell::getEffects() const {return (_effects);}
